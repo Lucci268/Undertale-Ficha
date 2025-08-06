@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha de RPGTALE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🖤 Ficha de RPGTALE</h1>
+
+    <section>
+      <h2>🧍 Informações do Personagem</h2>
+      <label>Nome: <input type="text" id="nome"></label>
+      <label>Raça: <input type="text" id="raca"></label>
+      <label>Gênero (opcional): <input type="text" id="genero"></label>
+      <label>Idade: <input type="text" id="idade"></label>
+      <label>ALMA / Espécie: <input type="text" id="alma"></label>
+      <label>Personalidade: <input type="text" id="personalidade"></label>
+    </section>
+
+    <section>
+      <h2>❤️ Status</h2>
+      <label>LOVE: <input type="number" id="love"></label>
+      <label>EXP: <input type="number" id="exp"></label>
+      <label>HP: <input type="text" id="hp"></label>
+      <label>ATK: <input type="number" id="atk"></label>
+      <label>DEF: <input type="number" id="def"></label>
+      <label>ACT / MAGIC: <input type="text" id="act"></label>
+      <label>SOUL: <input type="text" id="soul"></label>
+      <label>GOLD: <input type="number" id="gold"></label>
+    </section>
+
+    <section>
+      <h2>🧰 Inventário (10 espaços)</h2>
+      <div id="inventario">
+        <input type="text" placeholder="1 -"><br>
+        <input type="text" placeholder="2 -"><br>
+        <input type="text" placeholder="3 -"><br>
+        <input type="text" placeholder="4 -"><br>
+        <input type="text" placeholder="5 -"><br>
+        <input type="text" placeholder="6 -"><br>
+        <input type="text" placeholder="7 -"><br>
+        <input type="text" placeholder="8 -"><br>
+        <input type="text" placeholder="9 -"><br>
+        <input type="text" placeholder="10 -">
+      </div>
+    </section>
+
+    <section class="botoes">
+      <button onclick="salvarFicha()">💾 Salvar</button>
+      <button onclick="carregarFicha()">📂 Carregar</button>
+      <button onclick="exportarPDF()">📄 Exportar PDF</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
